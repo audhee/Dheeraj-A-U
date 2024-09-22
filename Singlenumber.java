@@ -1,4 +1,4 @@
-//Problem 136 the time complexity is O(n)
+//To FInd the single unique number present in the array and the time complexity is should be O(n)
 import java.util.*;
 public class Singlenumber {
     public static void main(String arg[])
