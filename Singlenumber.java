@@ -1,4 +1,4 @@
-//To FInd the single unique number present in the array and the time complexity is should be O(n)
+//To FInd the single unique number present in the array and the time complexity is should be O(n^2)
 import java.util.*;
 public class Singlenumber {
     public static void main(String arg[])
