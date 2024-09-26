@@ -4,16 +4,20 @@ import java.util.*;
 
 public class Array6 {
     static int LinearSearch(int key,int n,int array[]){
+        //Function for performing Linear Search
         for(int i=0;i<n;i++)
         {
+            //loop to access every element of the array
             
             if(key==array[i])
             {
                 System.out.println("The Key is in the index "+i);
+                //if the element found in the array it prints the above statement with the element's index and also it returns 1
                 return 1;
             }
         }
         return -1;
+        //if element not found it returns -1
     }   
     public static void main(String arg[])
     {
@@ -21,20 +25,25 @@ public class Array6 {
         
         System.out.println("Enter The Size of the array");
         int n=sc.nextInt();
+        //to take the input of the size of the array
         int[] array=new int[n];
         System.out.println("Enter The Elements of array");
         for(int i=0;i<n;i++)
         {
+            //The loop will intake the elements from the user
             array[i]=sc.nextInt();
         }
         System.out.println("Enter The Key To Be Searched");
         int key=sc.nextInt();
+        //intake of the key that has to be searched in the inputed array
         System.out.println("The Result of the Linear Search is "+LinearSearch(key, n, array));
         if(LinearSearch(key, n, array)==1)
         {
+            //after performing the search if the function returns 1 then it prints as below
             System.out.println("The Element is in the array at index ");
         }
         else
+            // if the function returns other than 1 then it prints as below statement
             System.out.println("The Element is not in the array");
     }
 }
